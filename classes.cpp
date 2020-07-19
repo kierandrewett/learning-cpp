@@ -6,5 +6,6 @@ using namespace std;
 int main() {
     string greeting = "Hello";
     getline(cin, greeting);
-    cout << greeting.length();
+    greeting.pop_back();
+    cout << greeting;
 }
