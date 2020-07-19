@@ -4,7 +4,6 @@
 using std::cout;
 
 int main() {
-    CHAT 
     short a;
     int b;
     long c;
