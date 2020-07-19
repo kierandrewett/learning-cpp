@@ -4,5 +4,5 @@
 using std::cout;
 
 int main() {
-    cout << pow(9, 999);
+    cout << 10 % 3.25;
 }
