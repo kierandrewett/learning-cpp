@@ -5,8 +5,6 @@ using namespace std;
 
 int main() {
     string greeting = "what the fuck";
-    getline(cin, greeting);
-    greeting.pop_back();
-    greeting.replace(9, 4, "*******");
+    greeting.replace(greeting.find("fuck"), 4, "****");
     cout << greeting;
 }
