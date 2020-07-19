@@ -5,14 +5,22 @@ using std::cin;
 using std::string;
 
 int main() {
-	string name = "MONKY";
+	string name = "";
 	int slices = 15;
 
-	cout << "What is your name? (default: monky): ";
-	cin >> name;
+	name = askForName();
 
 	cout << "How many slices of pizza do you want?: ";
 	cin >> slices;
 
 	cout << name << ", you have " << slices << " slices of pizza" << std::endl;
+}
+
+string askForName() {
+	string name = "";
+
+	cout << "What is your name? (default: monky): ";
+	cin >> name;
+
+	return name;
 }
