@@ -1,12 +1,11 @@
 #include <iostream>
 
 using std::cout;
+using std::cin;
 
 int main() {
     std::string greeting = "Hello";
-    cout << greeting.length();
+    cin >> greeting;
+    cout << greeting;
 
-    char name[] = "Kieran";
-
-    cout << name;
 }
