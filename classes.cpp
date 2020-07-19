@@ -5,5 +5,6 @@ using namespace std;
 
 int main() {
     string greeting = "what is up";
-    cout << greeting.substr(5, 2);
+
+    cout << greeting.find_first_of("aeiou");
 }
