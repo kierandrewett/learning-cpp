@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-    string greeting = "what the fuck";
-    greeting.replace(greeting.find("fuck"), 4, "****");
-    cout << greeting;
+    string greeting = "what is up";
+    cout << greeting.substr(5, 2);
 }
