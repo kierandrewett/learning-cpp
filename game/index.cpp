@@ -1,18 +1,26 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    int age;
+    string answer = "Bob";
+    int age_answer = 17; 
 
-    cout << "How old are you?: ";
-    cin >> age;
+    string guess;
+    int age_guess;
 
-    if(age < 13) {
-        cout << "You are not old enough!";
-    } else if(age == 18) {
-        cout << "You are an adult, welcome";
+    cout << "Guess my name?: ";
+
+    cin >> guess;
+
+        cout << "Guess my age?: ";
+
+    cin >> age_guess;
+
+    if(guess == answer && age_guess == age_answer) {
+        cout << "You got it correct!";
     } else {
-        cout << "Welcome";
+        cout << "You failed.";
     }
 }
