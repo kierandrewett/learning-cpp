@@ -1,31 +1,52 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
+void play();
+
 int main() {
-    string answer = "Bob";
-    int age_answer = 17; 
+    srand(time(NULL));
 
-    string guess;
-    int age_guess;
+    int option = 0;
 
-    cout << "Guess my name?: ";
+    do {
+        cout << "\tGuessing game" << endl << endl;
+        cout << "\t1. Play Game" << endl;
+        cout << "\t2. Quit Game" << endl;
+        cout << endl;
+        cout << "=> ";
+
+        cin >> option;
+
+        switch(option) {
+            case 1:
+                play();
+                return 0;
+            case 2:
+                cout << "Goodbye :(" << endl;
+                break;
+            default:
+                break;
+        }
+
+    } while(option != 2);
+
+}
+
+void play() {
+    int random = rand() % 251;
+    
+    cout << "Rolling you a random number..." << endl << "Guess the number" << endl << "=> ";
+
+    int guess;
 
     cin >> guess;
 
-        cout << "Guess my age?: ";
-
-    cin >> age_guess;
-
-    if(guess == answer && age_guess == age_answer) {
-        cout << "You got it correct!";
-    } else {
-        cout << "You failed.";
-    }
-
-    for(int i = 0; i < 10; i++) {
-        cout << i << endl;
-    }
-    
+    if(guess == random) cout << endl << "You got it correct!";
+    else cout << endl << "It was incorrect, the number was " << random;
 }
