@@ -4,5 +4,5 @@
 using std::cout;
 
 int main() {
-    cout << trunc(fmin(10, 3.25));
+    cout << round(fmin(10, 3.25));
 }
