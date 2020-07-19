@@ -3,5 +3,7 @@
 using std::cout;
 
 int main() {
-    const int x = 5;
+    const int setting = 3;
+    
+    enum { y = 100 };
 }
