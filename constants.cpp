@@ -3,5 +3,5 @@
 using std::cout;
 
 int main() {
-    int x = 5;
+    const int x = 5;
 }
