@@ -12,11 +12,20 @@ g++ index.cpp/ -o game
 game.exe
 ```
 
-## Build for UNIX-based OSes
+## Build for macOS
 #### Requirements
 * A brain
 
 ```bash
 g++ index.cpp/ -o game
 ./game.out
+```
+
+## Build for Linux
+#### Requirements
+* A brain
+
+```bash
+g++ index.cpp/ -o game
+./game
 ```
