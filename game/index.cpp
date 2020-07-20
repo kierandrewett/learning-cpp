@@ -18,7 +18,6 @@ int main() {
     cout << endl << "\tGuessing game" << endl << endl;
     cout << "\t1. Play Game" << endl;
     cout << "\t2. Quit Game" << endl;
-    cout << endl;
 
     do {
         showTitleScreen();
@@ -49,7 +48,7 @@ void play() {
 
         if(guess == answer) {
             cout << endl << "You got it correct!" << endl;
-            cout << endl << "Press 1 to restart or 2 to quit." << endl << endl;
+            cout << endl << "Press 1 to restart or 2 to quit." << endl;
         }
         else if(guess > answer) cout << endl << "Hint: Go lower!" << endl << endl;
         else if(guess < answer) cout << endl << "Hint: Go higher!" << endl << endl;
@@ -59,5 +58,5 @@ void play() {
 }
 
 void showTitleScreen() {
-    cout << "=> ";
+    cout << endl << "=> ";
 }
