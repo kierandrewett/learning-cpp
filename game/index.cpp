@@ -8,13 +8,12 @@
 
 #include "methods/play.cpp"
 #include "tools/titleScreen.cpp"
+#include "tools/seedRand.cpp"
 #include "declarations.cpp"
 
 using namespace std;
 
 int main() {
-    srand(time(NULL));
-
     int option = 0;
 
     cout << endl << "\tGuessing game" << endl << endl;
